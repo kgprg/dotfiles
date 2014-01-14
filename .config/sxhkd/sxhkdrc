@@ -8,7 +8,7 @@ alt + shift + q
 # Toggle panels
 alt + q
 	{pkill panel; pkill cat; pkill conky; bspc config top_padding 0 ,\
-	bspc config top_padding 14; /home/sunn/.config/bspwm/panel/panel & }
+	bspc config top_padding 14; /home/kg/.config/bspwm/panel/panel & }
 
 
 # Workstation Monitor
@@ -18,11 +18,6 @@ alt + w
 # Close window
 alt + shift + x
 	bspc  window -c
-
-# Kill all detached tmux sessions
-#alt + x
-#	/home/sunn/scripts/tmux_purge
-
 
 alt + ctrl + shift + x
 	bspc  window -k
@@ -101,11 +96,6 @@ alt + ctrl + {1-9}
 	bspc window -r 0.{1-9}
 
 # Focus or move window to desktops
-#alt + {_,shift + }{1-9,0}
-#	bspc {desktop -f,window -d} {1-9,0}
-#
-#ctrl + {_,shift + }{1-9,0}
-#	bspc {desktop -f,window -d} {a,b,c,d,e,f,g,h,i,j}
 alt + {_,shift + }{1-9,0}
 	bspc {desktop -f,window -d} {i,ii,iii,iv,v,vi,vii,viii,ix,x}
 super + {_,shift + }{1-9,0}
@@ -129,7 +119,6 @@ super + @button{1-3}
 #
 
 alt + shift + backslash
-#	/home/sunn/scripts/transparent_blank 
 	create_frame 
 
 alt + shift + Return
@@ -139,10 +128,10 @@ alt + ctrl + Return
 	 rulc -a true floating=true duration=1; urxvtc
 
 alt + r
-	/home/sunn/scripts/lens
+	/home/kg/.scripts/lens
 
 alt + shift + r
-	/home/sunn/scripts/dmenu/spotlight
+	/home/kg/.scripts/dmenu/spotlight
 
 alt + shift + b
 	firefox
@@ -154,13 +143,13 @@ alt + z
 	zathura
 
 XF86AudioRaiseVolume
-	/home/kg/scripts/dvol2 -i 2 & mplayer /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga
+	/home/kg/.scripts/dvol2 -i 2 & mplayer /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga
 
 XF86AudioLowerVolume
-	/home/kg/scripts/dvol2 -d 2 & mplayer /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga
+	/home/kg/.scripts/dvol2 -d 2 & mplayer /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga
 
 XF86AudioMute
-	/home/sunn/scripts/dvol2 -t 
+	/home/sunn/.scripts/dvol2 -t 
 
 XF86Sleep
 	pm-suspend
@@ -188,15 +177,15 @@ super + alt + {_,shift + }Escape
      bspc quit 1}
 
 #alt + F1
-#	/home/sunn/.xmonad/sc /home/sunn/.xmonad/scripts/dzen_music.sh
-#alt + F2
-#	/home/sunn/.xmonad/sc /home/sunn/.xmonad/scripts/dzen_network.sh
-#alt + F3
-#	/home/sunn/.xmonad/sc /home/sunn/.xmonad/scripts/dzen_battery.sh
-#alt + F4
-#	/home/sunn/.xmonad/sc /home/sunn/.xmonad/scripts/dzen_hardware.sh
-#alt + F5
-#	/home/sunn/.xmonad/sc /home/sunn/.xmonad/scripts/dzen_date.sh
-#alt + F6
-#	/home/sunn/.xmonad/sc /home/sunn/.xmonad/scripts/dzen_log.sh
+#	/home/kg/.xmonad/sc /home/kg/.xmonad/scripts/dzen_music.sh
+alt + F2
+	/home/kg/.xmonad/sc /home/kg/.xmonad/scripts/dzen_network.sh
+alt + F3
+	/home/kg/.xmonad/sc /home/kg/.xmonad/scripts/dzen_battery.sh
+alt + F4
+	/home/kg/.xmonad/sc /home/kg/.xmonad/scripts/dzen_hardware.sh
+alt + F5
+	/home/kg/.xmonad/sc /home/kg/.xmonad/scripts/dzen_date.sh
+alt + F6
+	/home/kg/.xmonad/sc /home/kg/.xmonad/scripts/dzen_log.sh
 

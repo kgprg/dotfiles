@@ -1,4 +1,5 @@
-xrdb ~/.Xresources
+[[ -f ~/.Xresources ]] && xrdb  ~/.Xresources
+
 xset +fp /usr/share/fonts/local
 xset +fp /usr/share/fonts/custom/limey
 xset +fp /usr/share/fonts/custom/lemon

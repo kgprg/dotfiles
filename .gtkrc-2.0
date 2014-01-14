@@ -1,4 +1,5 @@
 # GTK2.0 Config
 gtk-theme-name = "Boje-Greyscale"
 gtk-font-name = "Cure 10"
+#gtk-font-name = "Lucida Grande 8"
 gtk-icon-theme-name = "ACYL_Icon_Theme_0.9.4"
